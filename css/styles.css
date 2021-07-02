@@ -1,0 +1,196 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #bffdff 0%, #967eff 100%);
+}
+
+body>p {
+  margin: 0;
+}
+
+body>p>a {
+  width: 100px;
+  line-height: 40px;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background: rgb(118, 239, 255);
+  color: white;
+}
+
+body>p>a:hover {
+  opacity: 0.5;
+}
+
+header>h1 {
+  margin: 0;
+  font-size: 68px;
+  text-align: center;
+  text-shadow: 1px 2px 2px #808080;
+}
+
+section {
+  width: 400px;
+  height: 500px;
+  margin: 32px auto 0;
+  background: white;
+  box-shadow: 4px 4px 4px 4px rgb(131 131 131);
+  overflow: hidden;
+}
+
+section h1 {
+  margin: 20px 0 0 40px;
+  font-size: 32px;
+  text-shadow: 1px 1px 1px #808080;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  font-weight: 100;
+}
+
+form input {
+  width: 70%;
+  height: 40px;
+  margin: 20px 0 20px;
+  padding: 0 0 0 20px;
+  border: solid 3px rgb(230, 230, 230);
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 10%;
+  height: 40px;
+  margin: 20px 0 20px;
+  padding: 0;
+  border: none;
+  background: cyan;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.active{
+  background: cyan;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+form button:hover {
+  opacity: 0.7;
+}
+
+ul {
+  height: 200px;
+  width: 320px;
+  margin: auto;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  line-height: 40px;
+  padding-left: 20px;
+  background: rgb(245, 245, 245);
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.5s ease;
+}
+
+li:hover{
+  background: rgb(202, 202, 202);
+}
+
+div .checked {
+  background: rgb(202, 202, 202);
+  text-decoration: line-through;
+}
+
+li:hover + .delbtn{
+  right: 0px;
+  background: red;
+}
+
+.delbtn {
+  position: absolute;
+  width: 40px;
+  right: -40px;
+  line-height: 40px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.delbtn:hover {
+  right: 0px;
+  /* background: rgb(255, 0, 0); */
+}
+
+.checkeddel {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  line-height: 40px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer>p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section>div>div {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: rgb(255, 95, 95);
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+section>div>div:hover {
+  background: rgb(231, 0, 0);
+}
+
+.clearallactive {
+  pointer-events: auto;
+  opacity: 1;
+}
